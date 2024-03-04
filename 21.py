@@ -1,16 +1,20 @@
 # 21) Write a Python program that executes an operation on a list and handles an IndexError exception if the index is out of range.
 
 
-def perform_operation_on_list(my_list, index):
+def division_of_list(list1, index):
     try:
-        result = my_list[index] ** 2 
-        print(f"The result of squaring the element at index {index} is: {result}")
+        result = list1[index] / 2
+        print(f"The result of dividing the element at index {index} is: {result}")
     except IndexError:
-        print(f"Error: Index {index} is out of range for the given list.")
+        if index < 0:
+            print(f"Error: Negative index {index} is out of range for the given list.")
+        else:
+            print(f"Error: Index {index} is out of range for the given list.")
 
 if __name__ == "__main__":
-    sample_list = [1, 2, 3, 4, 5]
+    input_numbers = input("Enter a list of integers separated by space: ")
+    list1 = list(map(int, input_numbers.split()))
 
-    perform_operation_on_list(sample_list, 2)
-    perform_operation_on_list(sample_list, 5)  
-    perform_operation_on_list(sample_list, -1)  
+    division_of_list(list1, 2)
+    division_of_list(list1, 5)
+    division_of_list(list1, -1)

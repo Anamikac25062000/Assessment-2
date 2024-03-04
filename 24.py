@@ -7,9 +7,7 @@
 import random
 
 def get_user_choice():
-    """
-    Function to get the user's choice (rock, paper, or scissors).
-    """
+  
     while True:
         user_choice = input("Enter your choice (rock, paper, or scissors): ").lower()
         if user_choice in ['rock', 'paper', 'scissors']:
@@ -18,15 +16,10 @@ def get_user_choice():
             print("Invalid choice. Please choose rock, paper, or scissors.")
 
 def get_computer_choice():
-    """
-    Function to get the computer's random choice (rock, paper, or scissors).
-    """
     return random.choice(['rock', 'paper', 'scissors'])
 
 def determine_winner(user_choice, computer_choice):
-    """
-    Function to determine the winner of the game based on choices.
-    """
+   
     if user_choice == computer_choice:
         return "It's a tie!"
     elif (user_choice == 'rock' and computer_choice == 'scissors') or \
@@ -36,7 +29,6 @@ def determine_winner(user_choice, computer_choice):
     else:
         return "You lose! Better luck next time."
 
-# Main game loop
 if __name__ == "__main__":
     print("Welcome to Rock, Paper, Scissors!")
 
@@ -54,3 +46,5 @@ if __name__ == "__main__":
         if play_again != 'yes':
             print("Thanks for playing. Goodbye!")
             break
+
+

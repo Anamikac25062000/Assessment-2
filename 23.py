@@ -20,14 +20,5 @@ def get_integer_input():
 
 if __name__ == "__main__":
 
-    print("Run 1:")
     first_number = get_integer_input()
-    print(f"You entered: {first_number}")
-
-    print("\nRun 2:")
-    first_number = get_integer_input()
-    print(f"You entered: {first_number}")
-
-    print("\nRun 3:")
-    first_number = get_integer_input()
-    print(f"You entered: {first_number}")
+    print(first_number)

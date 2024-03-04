@@ -8,11 +8,11 @@
 
 
 class Notes:
-    FILE_NAME = "1.txt"
+    file_name = "1.txt"
 
     @classmethod
     def write(cls):
-        with open(cls.FILE_NAME, "w") as file:
+        with open(cls.file_name, "w") as file:
             content = input("Enter your note (this will overwrite existing notes): ")
             file.write(content)
         print("Note written successfully.")
@@ -20,14 +20,14 @@ class Notes:
     @classmethod
     def read(cls):
         try:
-            with open(cls.FILE_NAME, "r") as file:
+            with open(cls.file_name, "r") as file:
                 return file.read()
         except FileNotFoundError:
             return "No notes found."
-
+        
     @classmethod
     def append(cls):
-        with open(cls.FILE_NAME, "a") as file:
+        with open(cls.file_name, "a") as file:
             content = input("Enter your note to append: ")
             file.write("\n" + content)
         print("Note appended successfully.")

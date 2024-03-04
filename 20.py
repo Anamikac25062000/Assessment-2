@@ -2,7 +2,6 @@
 
 
 def get_input_safe(prompt, data_type, error_message="Invalid input. Please try again."):
-   
     while True:
         user_input = input(prompt)
         try:
@@ -12,7 +11,6 @@ def get_input_safe(prompt, data_type, error_message="Invalid input. Please try a
             print(error_message)
 
 if __name__ == "__main__":
-
     age = get_input_safe("Enter your age: ", int)
     print(f"You entered: {age}")
 

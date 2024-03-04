@@ -31,11 +31,4 @@ def add_two_integers():
 
 if __name__ == "__main__":
 
-    print("RUN 1:")
-    add_two_integers()
-
-    print("\nRUN 2:")
-    add_two_integers()
-
-    print("\nRUN 3:")
     add_two_integers()
