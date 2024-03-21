@@ -33,3 +33,5 @@ def calculator():
             print(f"\nResult: {result}\n")
         else:
             print("Invalid operator. Please enter a valid operator (+, -, *, /).")
+
+calculator()
